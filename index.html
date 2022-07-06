@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Sort</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
 
-    </div>
-        <div id="box">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  </head>
 
-        </div>
-    <div id="btn-container">
-        <button id="generateButton" type="button">Generate Array</button>
-        <button id="sortButton" class="sort" type="button">Sort Array</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+  <body>
+    <nav>
+      <ul id="navbar-list">
+        <li>
+          <button id="bubble-sort-btn" class="nav-btn">Bubble Sort</button>
+        </li>
+        <li><button id="selection-sort-btn" class="nav-btn">Selection Sort</button></li>
+        <li><button id="insertion-sort-btn" class="nav-btn">Insertion Sort</button></li>
+        <li><button id="merge-sort-btn" class="nav-btn">Merge Sort</button></li>
+        <li><button id="quick-sort-btn" class="nav-btn">Quick Sort</button></li>
+        <li>
+          <button id="radix-sort-btn" class="nav-btn">Radix Sort</button>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="sorting-window"></section>
+
+    <section>
+      <ul id="control-btns-list">
+        <li><button id="generate-array-btn" class="control-btn">Generate Array</button></li>
+        <li class="speed-btns-container">
+          <button id="slow" class="speed-btn">S</button>
+          <button id="medium" class="speed-btn">M</button>
+          <button id="fast" class="speed-btn">F</button>
+        </li>
+        <li><button id="sort-array-btn" class="control-btn">Sort Array</button></li>
+      </ul>
+    </section>
+
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
